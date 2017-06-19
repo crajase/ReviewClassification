@@ -71,7 +71,7 @@ for epoch in range(20):
 #save model
 if not os.path.exists("trained"):
     os.makedirs("trained")
-model.save(os.path.join("trained", "comments2vec.d2v"))
+model.save("comments2vec.d2v")
 #load model
 model = Doc2Vec.load("comments2vec.d2v")
 print(model)
