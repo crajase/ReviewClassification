@@ -6,7 +6,6 @@ import random
 import numpy as np
 import tensorflow as tf
 import multiprocessing
-from cleanData import clean
 
 df = pd.read_csv("TrimedData.csv")
 df.columns.values
