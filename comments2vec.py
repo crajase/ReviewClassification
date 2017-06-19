@@ -7,6 +7,15 @@ import numpy as np
 import tensorflow as tf
 import multiprocessing
 
+def clean(data):
+    data = re.sub("[^a-zA-Z?!.@]"," ", str(data))
+    word_list = []
+    for word in data.strip().split():
+        word_lower = word.lower()
+        if word_lower not in stop_words:
+            word_list.append(word_lower)
+    return word_list
+    
 df = pd.read_csv("TrimedData.csv")
 df.columns.values
 headers = list(df.columns.values)
@@ -64,7 +73,7 @@ if not os.path.exists("trained"):
     os.makedirs("trained")
 model.save(os.path.join("trained", "comments2vec.d2v"))
 #load model
-model = Doc2Vec.load(os.path.join("trained", "comments2vec.d2v"))
+model = Doc2Vec.load("comments2vec.d2v")
 print(model)
 
 #x_train = []
