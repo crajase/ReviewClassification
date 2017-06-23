@@ -3,6 +3,7 @@ import numpy as np
 from gensim.models.doc2vec import Doc2Vec
 import os
 import re
+from sklearn.decomposition import PCA
 
 
 def readNonNullData(file_csv):
@@ -50,6 +51,11 @@ def splitData(features, y_output, num_test):
     y_train = y_output[0:train_length]
     y_test = y_output[train_length:]
     return x_train, y_train, x_test, y_test
+
+
+def PCA_reduce_feature(features, num_comp):
+    pca = PCA(num_comp)
+    return pd.DataFrame(pca.fit_transform(features))
 
 
 def analyseFeature(feature, y_output):
