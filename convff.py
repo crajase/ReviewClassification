@@ -5,45 +5,52 @@ import pandas as pd
 from gensim.models.doc2vec import Doc2Vec
 
 
-class FeedForward(object):
-    def __init__(self, hl1_size, hl2_size):
-        self.n_nodes_hl1 = hl1_size
-        self.n_nodes_hl2 = hl2_size
+class ConvFF(object):
+    def __init__(self):
         self.X = tf.placeholder('float', [None, None])
         self.Y = tf.placeholder('float')
         self.PredictedLabel = tf.placeholder('float')
+        self.filter_size = 5
 
-    def getPrediction(self, data, featureSize, n_classes):
-        hidden_layer_1 = {'weights': tf.Variable(tf.random_normal([featureSize, self.n_nodes_hl1])),
-                          'biases': tf.Variable(tf.random_normal([self.n_nodes_hl1]))}
+    # dimension of W is filter_hgt x number_of_act_unit
+    # dimension of x is num_samples x num_feature
+    def conv2d(self, x, W, num_act_unit):
+        x = tf.reshape(x, shape=[-1, num_act_unit, self.filter_size])
+        x = tf.transpose(x, [0, 2, 1])
+        # resultant x dimension is num_samples x num_filter_hgt x number_of act_unit
+        mul = x * W
+        return tf.reduce_sum(mul, axis=1)
 
-        hidden_layer_2 = {'weights': tf.Variable(tf.random_normal([self.n_nodes_hl1, self.n_nodes_hl2])),
-                          'biases': tf.Variable(tf.random_normal([self.n_nodes_hl2]))}
+    def getPrediction(self, x, featureSize, n_classes):
+        lr1 = int(featureSize / self.filter_size)
+        lr2 = int(lr1 / self.filter_size)
+        weights = {'W_conv1': tf.Variable(tf.random_normal([self.filter_size, lr1])),
+                   'W_conv2': tf.Variable(tf.random_normal([self.filter_size, lr2])),
+                   'out': tf.Variable(tf.random_normal([lr2, n_classes]))}
 
-        output_layer = {'weights': tf.Variable(tf.random_normal([self.n_nodes_hl2, n_classes])),
-                        'biases': tf.Variable(tf.random_normal([n_classes]))}
+        biases = {'b_conv1': tf.Variable(tf.random_normal([lr1])),
+                  'b_conv2': tf.Variable(tf.random_normal([lr2])),
+                  'out': tf.Variable(tf.random_normal([n_classes]))}
+        partW1 = [(i + 0) / lr1 for i in range(lr1)]
+        partW2 = [(i + 0) / lr2 for i in range(lr2)]
 
-        l1 = tf.add(tf.matmul(data, hidden_layer_1['weights']), hidden_layer_1['biases'])
-        # l1 = tf.nn.relu(l1)
-        l1 = tf.nn.sigmoid(l1)
+        conv1 = tf.nn.tanh(self.conv2d(x, weights['W_conv1'], lr1) + biases['b_conv1'])
 
-        l2 = tf.add(tf.matmul(l1, hidden_layer_2['weights']), hidden_layer_2['biases'])
-        # l2 = tf.nn.relu(l2)
-        l2 = tf.nn.sigmoid(l2)
+        conv2 = tf.nn.tanh(self.conv2d(conv1, weights['W_conv2'], lr2) + biases['b_conv2'])
 
-        output = tf.matmul(l2, output_layer['weights']) + output_layer['biases']
+        output = tf.nn.sigmoid(tf.matmul(conv2, weights['out']) + biases['out'])
 
-        reg = tf.reduce_sum(tf.square(hidden_layer_1['weights']))
-        reg += tf.reduce_sum(tf.square(hidden_layer_2['weights']))
-        reg += tf.reduce_sum(tf.square(output_layer['weights']))
+        reg = tf.reduce_sum(tf.reduce_sum(tf.square(weights['W_conv1']), axis=0) * partW1)
+        reg += tf.reduce_sum(tf.reduce_sum(tf.square(weights['W_conv2']), axis=0) * partW2)
+        reg += tf.reduce_sum(tf.square(weights['out']))
 
-        return tf.nn.sigmoid(output), reg
+        return output, reg
 
     def compute_cost(self, prediction, Y, theta_sum, lambda_val):
         m = tf.reduce_sum(prediction) / tf.reduce_mean(prediction)
-        # cost = tf.reduce_mean( tf.nn.softmaself.X_cross_entropy_with_logits(logits=prediction, labels=y) )
+        # cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=prediction, labels=Y))
         # diff = tf.subtract(prediction, Y)
-        # cost = tf.reduce_mean(tf.multiply(diff, diff))
+        # cost = tf.reduce_mean(tf.square(diff))
         singlecost = tf.multiply(Y, tf.log(prediction)) + tf.multiply((1 - Y), tf.log(1 - prediction))
         cost = -1 * tf.reduce_mean(tf.reduce_sum(singlecost, axis=1))
 
@@ -80,8 +87,8 @@ class FeedForward(object):
             predict, theta = sess.run([prediction, theta_sum], feed_dict={self.X: test_x})
             test_cost = sess.run(cost, feed_dict={prediction: predict, self.Y: test_y, theta_sum: theta})
             acc_eval, conf_list, prf = self.evaluatoinParameter(predict, sess, test_x, test_y)
-            #print(predict[1:10])
-            #print(test_y[1:10])
+            print(predict[1:10])
+            print(test_y[1:10])
         return [train_cost, test_cost], acc_eval, conf_list, prf
 
     def evaluatoinParameter(self, predict, sess, test_x, test_y):

@@ -8,7 +8,7 @@ import tensorflow as tf
 import multiprocessing
 
 def clean(data):
-    data = re.sub("[^a-zA-Z?!.@]"," ", str(data))
+    data = re.sub("[^a-zA-Z?!.@]", " ", str(data))
     word_list = []
     for word in data.strip().split():
         word_lower = word.lower()
@@ -16,12 +16,19 @@ def clean(data):
             word_list.append(word_lower)
     return word_list
     
-df = pd.read_csv("TrimedData.csv")
+df = pd.read_csv("AllData.csv")
 df.columns.values
 headers = list(df.columns.values)
+
 headers.remove("Comments")
-df = df.drop(headers,axis=1)
+
+df = df.drop(headers, axis=1)
 df.head()
+
+print(df.shape)
+df.reset_index()
+#df = df[2000:]
+print(df.shape)
 
 comments = []
 for index, row in df.iterrows():
@@ -31,7 +38,7 @@ for index, row in df.iterrows():
     comments.append(words)
 i = 0
 labeled_comments = []
-comments = comments[0:len(comments) - 200]
+#comments = comments[0:len(comments) - 200]
 for comment in comments:
     #print comment
     sentence = LabeledSentence(words=comment, tags=["COMMENT_"+str(i)])
@@ -39,7 +46,7 @@ for comment in comments:
     i += 1
     
 #more dimensions mean more trainig them, but more generalized
-num_features = 50
+num_features = 400
 # Minimum word count threshold.
 min_word_count = 1
 # Number of threads to run in parallel.
@@ -56,7 +63,7 @@ model = Doc2Vec(min_count=min_word_count,
 	window=context_size, 
 	size=num_features,
 	sample=downsampling,
-	negative=5,
+	negative=20,
 	workers=num_workers)
 	
 model.build_vocab(labeled_comments)
