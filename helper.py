@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+import data_clean as dc
+import idf
 from gensim.models.doc2vec import Doc2Vec
 import os
 import re
@@ -23,10 +25,53 @@ def DFToFeatureX(feature_model, df, x_label):
     featuresX = []
     df = df[x_label]
     for string in df:
-        string = re.sub("[^a-zA-Z?!]", " ", str(string))
-        # TODO: Clean by removing stopwords
-        words = [w.lower() for w in string.strip().split() if len(w) >= 3]
+        words = dc.get_clean_wrd_list(string)
         featuresX.append(feature_model.infer_vector(words))
+    return pd.DataFrame(featuresX)
+
+
+def DFToFeatureX_W(feature_model, df, x_label):
+    # TODO: Check each step for correctness
+    featuresX = []
+    vec_len = feature_model.layer1_size
+    df = df[x_label]
+    for string in df:
+        # TODO: Clean by removing stopwords
+        words = dc.get_clean_wrd_list(string)
+        words_vec = []
+        for word in words:
+            if(word in feature_model):
+                feat = feature_model[word]
+                words_vec.append(feat)
+        if(len(words_vec) > 0):
+            sent_vec = np.array(words_vec).mean(axis=0)
+            featuresX.append(sent_vec)
+        else:
+            featuresX.append(np.zeros(vec_len))
+    print(featuresX[-1])
+    return pd.DataFrame(featuresX)
+
+
+def DFToFeatureX_W_Tdf(feature_model, idf_model, df, x_label):
+    # TODO: Check each step for correctness
+    featuresX = []
+    vec_len = feature_model.layer1_size
+    df = df[x_label]
+    for string in df:
+        # TODO: Clean by removing stopwords
+        words = dc.get_clean_wrd_list(string)
+        word_idf = idf_model.calc_tf_idf(words)
+        words_vec = []
+        for word in words:
+            if(word in feature_model):
+                feat = [ft * word_idf[word] for ft in feature_model[word]]
+                words_vec.append(feat)
+        if(len(words_vec) > 0):
+            sent_vec = np.array(words_vec).mean(axis=0)
+            featuresX.append(sent_vec)
+        else:
+            featuresX.append(np.zeros(vec_len))
+    print(featuresX[-1])
     return pd.DataFrame(featuresX)
 
 
@@ -52,8 +97,8 @@ def standardize(x_df_features, featureScale=True, makePolynomial=True, d=1):
 
 # splits the data into training and test set.
 # TODO: To add cross validation set
-def splitData(features, y_output, num_test):
-    train_length = len(features) - num_test
+def splitData(features, y_output, testPerc):
+    train_length = int((100 - testPerc) * features.shape[0] / 100)
     x_train = features[0:train_length]
     x_test = features[train_length:]
     y_train = y_output[0:train_length]
@@ -113,6 +158,8 @@ def shuffle_and_distribute(features, y_output, testPerc):
     feature_pos, feature_neg = splitPosAndNeg(features, y_output)
     pos_Columns = feature_pos.columns
     neg_Columns = feature_neg.columns
+    print(pos_Columns[1:10])
+    print(neg_Columns[1:10])
     feature_pos['target'] = 1
     feature_neg['target'] = 0
     train_len_pos = int((100 - testPerc) * len(feature_pos) / 100)

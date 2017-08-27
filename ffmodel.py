@@ -34,23 +34,23 @@ class FeedForward(object):
         output = tf.matmul(l2, output_layer['weights']) + output_layer['biases']
 
         reg = tf.reduce_sum(tf.square(hidden_layer_1['weights']))
-        reg += tf.reduce_sum(tf.square(hidden_layer_2['weights']))
+        # reg += tf.reduce_sum(tf.square(hidden_layer_2['weights']))
         reg += tf.reduce_sum(tf.square(output_layer['weights']))
 
         return tf.nn.sigmoid(output), reg
 
     def compute_cost(self, prediction, Y, theta_sum, lambda_val):
         m = tf.reduce_sum(prediction) / tf.reduce_mean(prediction)
-        # cost = tf.reduce_mean( tf.nn.softmaself.X_cross_entropy_with_logits(logits=prediction, labels=y) )
+        cost_org = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=prediction, labels=Y))
         # diff = tf.subtract(prediction, Y)
         # cost = tf.reduce_mean(tf.multiply(diff, diff))
-        singlecost = tf.multiply(Y, tf.log(prediction)) + tf.multiply((1 - Y), tf.log(1 - prediction))
-        cost = -1 * tf.reduce_mean(tf.reduce_sum(singlecost, axis=1))
+        # singlecost = tf.multiply(Y, tf.log(prediction)) + tf.multiply((1 - Y), tf.log(1 - prediction))
+        # cost_org = -1 * tf.reduce_mean(tf.reduce_sum(singlecost, axis=1))
 
         # cost = tf.reduce_mean(tf.exp(tf.abs(diff)))
         # regularization
-        cost += lambda_val * theta_sum / (2 * m)   # move square to individual elements
-        return cost
+        cost = cost_org + lambda_val * theta_sum / (2 * m)   # move square to individual elements
+        return cost, cost_org
 
     def optimization(self, cost):
         optimizer = tf.train.AdamOptimizer().minimize(cost)
@@ -60,29 +60,31 @@ class FeedForward(object):
     # The training and test data are passed as Pandas dataframe object
     def train_and_test_neural_network(self, train_x, train_y, test_x, test_y, lambda_val):
         featureSize = len(train_x.columns)
-        n_classes = 1     # len(train_y.columns)
+        n_classes = 2     # len(train_y.columns)
         prediction, theta_sum = self.getPrediction(self.X, featureSize, n_classes)
-        cost = self.compute_cost(prediction, self.Y, theta_sum, lambda_val)
+        cost, cost_org = self.compute_cost(prediction, self.Y, theta_sum, lambda_val)
         optimizer = self.optimization(cost)
-        hm_epochs = 10000
+        hm_epochs = 15000
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
             train_cost = 0
-            _, c = sess.run([optimizer, cost], feed_dict={self.X: train_x, self.Y: train_y})
+            train_cost_o = 0
+            _, c, co = sess.run([optimizer, cost, cost_org], feed_dict={self.X: train_x, self.Y: train_y})
             if(math.isnan(c)):
                 return [None, None], -1, None, None
             for epoch in range(hm_epochs):
-                _, c = sess.run([optimizer, cost], feed_dict={self.X: train_x, self.Y: train_y})
+                _, c, co = sess.run([optimizer, cost, cost_org], feed_dict={self.X: train_x, self.Y: train_y})
                 train_cost = c
+                train_cost_o = co
                 if(epoch % 2500 == 0):
                     print("Iter ", epoch, " out of ", hm_epochs, " Cost: ", train_cost)
 
             predict, theta = sess.run([prediction, theta_sum], feed_dict={self.X: test_x})
-            test_cost = sess.run(cost, feed_dict={prediction: predict, self.Y: test_y, theta_sum: theta})
+            test_cost, test_cost_o = sess.run([cost, cost_org], feed_dict={prediction: predict, self.Y: test_y, theta_sum: theta})
             acc_eval, conf_list, prf = self.evaluatoinParameter(predict, sess, test_x, test_y)
             #print(predict[1:10])
             #print(test_y[1:10])
-        return [train_cost, test_cost], acc_eval, conf_list, prf
+        return [[train_cost, train_cost_o], [test_cost, test_cost_o]], acc_eval, conf_list, prf
 
     def evaluatoinParameter(self, predict, sess, test_x, test_y):
         n_classes = 1       # len(test_y.columns)
@@ -98,11 +100,15 @@ class FeedForward(object):
         accuracy = tf.reduce_mean(tf.cast(correct, 'float'))
         acc_eval = accuracy.eval({self.PredictedLabel: predict, self.Y: test_y})
 
+        pre, act = sess.run([predicted_label, actual_label], feed_dict={self.PredictedLabel: predict, self.Y: test_y})
+
+        final_prediction = predicted_label[:, 0]
+        original_act = actual_label[:, 0]
         # Confusion Matrix
-        TP = tf.count_nonzero(predicted_label * actual_label)
-        TN = tf.count_nonzero((1 - predicted_label) * (1 - actual_label))
-        FP = tf.count_nonzero(predicted_label * (1 - actual_label))
-        FN = tf.count_nonzero((1 - predicted_label) * actual_label)
+        TP = tf.count_nonzero(final_prediction * original_act)
+        TN = tf.count_nonzero((1 - final_prediction) * (1 - original_act))
+        FP = tf.count_nonzero(final_prediction * (1 - original_act))
+        FN = tf.count_nonzero((1 - final_prediction) * original_act)
         tp, tn, fp, fn = sess.run([TP, TN, FP, FN], feed_dict={self.PredictedLabel: predict, self.Y: test_y})
 
         # TODO: precision, recall, f-score
