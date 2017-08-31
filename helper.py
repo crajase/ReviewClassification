@@ -9,7 +9,7 @@ import operator
 from sklearn.decomposition import PCA
 
 
-def readNonNullData(file_csv, x_label, y_label):
+def readData(file_csv, x_label):
     df = pd.read_csv(file_csv)
     df = df.sample(frac=1).reset_index(drop=True)
     headers = list(df.columns.values)
@@ -17,6 +17,10 @@ def readNonNullData(file_csv, x_label, y_label):
     print(headers)
     df = df[headers]
     df = df[df[x_label].notnull()]
+    return df
+
+
+def getNotNull(df, y_label):
     df = df[df[y_label].notnull()]
     return df
 
@@ -48,7 +52,6 @@ def DFToFeatureX_W(feature_model, df, x_label):
             featuresX.append(sent_vec)
         else:
             featuresX.append(np.zeros(vec_len))
-    print(featuresX[-1])
     return pd.DataFrame(featuresX)
 
 
@@ -138,8 +141,8 @@ def analyseFeature(features_pos, features_neg, n_feature):
     diff_sd = (sd_pos + sd_neg).abs()
     print("Pos Mean: ", mean_pos.mean())
     print("Neg Mean: ", mean_neg.mean())
-    dist = (var_pos + var_neg) - diff_mean
-    # dist = (sd_pos + sd_neg) - diff_mean
+    # dist = (var_pos + var_neg) - diff_mean
+    dist = (sd_pos + sd_neg) - diff_mean
     analyse = (dist > 0).values
     dist_np = dist.values
     dist_vec = {i: dist_np[i] for i in range(len(dist_np))}
