@@ -6,11 +6,15 @@ from gensim.models.doc2vec import Doc2Vec
 
 
 class FeedForward(object):
-    def __init__(self, num_nodes):
+    def __init__(self, num_nodes, learning_rt, epoch):
         self.n_nodes = num_nodes
         self.X = tf.placeholder('float', [None, None])
         self.Y = tf.placeholder('float')
         self.PredictedLabel = tf.placeholder('float')
+        self.epoch = epoch
+        self.learning_rate_st = learning_rt[0]
+        self.decay_rate = learning_rt[1]
+        self.decay_val = learning_rt[2]
 
     def getPrediction(self, data, featureSize, n_classes):
         weights_hidden = {}
@@ -18,12 +22,12 @@ class FeedForward(object):
         dim_l = featureSize
         for idx, layer_sz in enumerate(self.n_nodes):
             layer_idx = idx + 1
-            weights_hidden[layer_idx] = tf.Variable(tf.random_normal([dim_l, layer_sz]) * 0.01)
-            biases_hidden[layer_idx] = tf.Variable(tf.random_normal([layer_sz]) * 0.01)
+            weights_hidden[layer_idx] = tf.Variable(tf.random_normal([dim_l, layer_sz]))
+            biases_hidden[layer_idx] = tf.Variable(tf.zeros([layer_sz]))
             dim_l = layer_sz
 
-        output_layer = {'weights': tf.Variable(tf.random_normal([dim_l, n_classes]) * 0.01),
-                        'biases': tf.Variable(tf.random_normal([n_classes]) * 0.01)}
+        output_layer = {'weights': tf.Variable(tf.random_normal([dim_l, n_classes])),
+                        'biases': tf.Variable(tf.zeros([n_classes]))}
 
         last_act = data
         for idx, layer_sz in enumerate(self.n_nodes):
@@ -33,6 +37,7 @@ class FeedForward(object):
             last_act = tf.nn.tanh(z)
 
         output = tf.matmul(last_act, output_layer['weights']) + output_layer['biases']
+        # output = tf.nn.sigmoid(output)
 
         reg = 0
 
@@ -41,11 +46,11 @@ class FeedForward(object):
             reg += tf.reduce_sum(tf.square(weights_hidden[layer_idx]))
         reg += tf.reduce_sum(tf.square(output_layer['weights']))
 
-        return tf.nn.sigmoid(output), reg
+        return output, reg
 
     def compute_cost(self, prediction, Y, theta_sum, lambda_val):
         m = tf.reduce_sum(prediction) / tf.reduce_mean(prediction)
-        loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=prediction, labels=Y))
+        loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=prediction, labels=Y))
         # diff = tf.subtract(prediction, Y)
         # loss = tf.reduce_mean(tf.multiply(diff, diff))
         # loss_diff = tf.multiply(Y, tf.log(prediction)) + tf.multiply((1 - Y), tf.log(1 - prediction))
@@ -57,6 +62,11 @@ class FeedForward(object):
         return cost, loss
 
     def optimization(self, cost):
+        '''
+        global_step = tf.Variable(0, trainable=False)  # count the number of steps taken.
+        learning_rate = tf.train.exponential_decay(self.learning_rate_st, global_step, self.decay_rate, self.decay_val, staircase=True)
+        optimizer = tf.train.AdamOptimizer(learning_rate).minimize(cost, global_step=global_step)
+        '''
         optimizer = tf.train.AdamOptimizer().minimize(cost)
         # optimizer = tf.train.GradientDescentOptimizer(0.1).minimize(cost)
         return optimizer
@@ -68,7 +78,6 @@ class FeedForward(object):
         prediction, theta_sum = self.getPrediction(self.X, featureSize, n_classes)
         cost, loss = self.compute_cost(prediction, self.Y, theta_sum, lambda_val)
         optimizer = self.optimization(cost)
-        hm_epochs = 5000
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
             train_cost = 0
@@ -76,14 +85,14 @@ class FeedForward(object):
             _, c, co = sess.run([optimizer, cost, loss], feed_dict={self.X: train_x, self.Y: train_y})
             if(math.isnan(c)):
                 return [None, None, -1, None, None, None, None, None]
-            for epoch in range(hm_epochs):
+            for epoch in range(self.epoch):
                 _, c, los = sess.run([optimizer, cost, loss], feed_dict={self.X: train_x, self.Y: train_y})
                 train_cost = c
                 train_loss = los
-                if(epoch % int(hm_epochs / 4) == 0):
-                    print("Iter ", epoch, " out of ", hm_epochs, " Cost: ", train_cost)
+                if(epoch % int(self.epoch / 4) == 0):
+                    print("Iter ", epoch, " out of ", self.epoch, " Cost: ", train_cost)
 
-            print("Iter ", epoch, " out of ", hm_epochs, " Cost: ", train_cost)
+            print("Iter ", epoch, " out of ", self.epoch, " Cost: ", train_cost)
             predict, theta = sess.run([prediction, theta_sum], feed_dict={self.X: test_x})
             print(predict[1:5])
             # print(test_y)
@@ -127,4 +136,10 @@ class FeedForward(object):
         return len(self.n_nodes)
 
     def getNumNodes(self):
-        return str(self.n_nodes_hl1) + ", " + str(self.n_nodes_hl2)
+        return self.n_nodes
+
+    def getLearningRate(self):
+        return [self.learning_rate_st, self.decay_rate, self.decay_val]
+
+    def getEpoch(self):
+        return self.epoch
