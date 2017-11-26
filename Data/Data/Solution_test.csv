@@ -1,0 +1,347 @@
+,Comments,Solution
+0,The program worked perfectly and it was interesting to hear different sounds and nothing repetitive. All they have to do is spread their projects out more in future projects.,2.0
+1,"I enjoyed the good key sound, it was also ironic that the user choose the same good key as I did. On a conceptual note, the program was fun to work with. It was a good mix of goofy and fun.",0.0
+2,"Something that I thought that was interesting about the coding on this patch was hiding of almost all the elements, minus the button. I did not know that you can hide all of these elements and is definitely something that I learned while going over this patch. My only concern was that since most of the elements were hidden was that I could not easily click on the ezdac~ message in order to turn the sound on.",0.0
+3,The patch itself gives off a very good feel. It was not as clear as some of the others and at first it looks like they may have missed a step but they just simplified it to the very core.,0.0
+4,"Upon opening this patch was not usable. I had to open/import the sounds myself in order to use the patch. That said, the sound files were labeled in such a way that it was not an issue identifying which went where. The sound files themselves were very clear and pleasant to listen to. The experience sent mixed messages because I wasn't sure if having the sound files opened automatically was a requirement or not.",1.0
+5,"Since it was condensed in size, it definitely took more time to find the right key(S), PLURAL. It was definitely surprising because I literally went down the rows of keys trying to match the numbers. I learned that to be sneaky and troll people, don't show all the connections so that people can get frustrated and slam their keyboard...no I didn't do that..",3.0
+6,"I liked the music patch of the good key, it went well with the symbol sound of the bad key. There was definitely a reward there for the effort to find the good key.",0.0
+7,"The sounds are interesting because it seems to be a different language? It's interesting because it makes it a bit more fun to use than just a ""yes"" and ""no""",4.0
+8,"introduction gives a clear explanation of what CP is about.
+ 
+ Theory could go more into detail about what is going on with the equations how they relate to Newton's method. 
+ 
+ Study and results: place solutions given from code into a table to keep things organized. explanation of graphs and what equations went with them would improve report.
+ 
+ there needs to be an area of new observations ( like if the equations were changed in the code to see what happens to the graphs) 
+ 
+ the report is incomplete. go into more detail with theory and study and results.
+ 
+ 
+ 
+ Presentation: organize and clean up solutions 
+ 
+ work on conclusion",3.0
+9,"So, the ASCII code for their selected value is 22, but that doesn't actually correspond to a keyboard input, so it didn't actually function in the way I would hope.",3.0
+10,"The patch was approached as expected. The only thing that would have been better is if the creator used the message as ""open yes.aif 1""",3.0
+11,"Like I said before, it is virtually identical to the example from class. I would suggest cleaning up the patch cords and organization of objects a little more.",3.0
+12,"The patch had a very clean and professional look to it. This was because there were only necessary components in the patch, nothing extra. Also, the patch was aligned to the grid and in a straight line so you could tell easily where the lines lead to.",0.0
+13,"The sounds were nice. The ""bad"" sound did get a little annoying after a while but I've heard worse. When I hit the right key, It was obvious because of the celebratory music with cheering in the background. Though it was a little disappointing that there was a not telling me exactly which key was the right one. It went against the purpose of the patch.",0.0
+14,"It was a quick experience, but pleasant. The sounds were not obnoxious and nicely leveled. The sounds were traditional positive and negative sounds for guesses, so it wasn't an out of the ordinary experience.",0.0
+15,"The patch was pretty standard in terms of technical setup. It followed the tutorial correctly. As mentioned above, the maniacal laugh was pretty surprising. I cant imagine what people with headphones might have done. The sounds chosen did get a bit annoying after multiple key presses, so using multiple laugh tracks might help with the monotony that tends to occur after multiple attempts. In the future I might suggest labeling your files with your name or some kind of identifier - especially if an instructor is going to be looking at it.",3.0
+16,Extremely simple. Which is nice.,0.0
+17,"The sounds were very professional. The ""yes"" sound was similar to the success sound of a computer or a machine. The ""no"" sound also sounded like a robot machine sound. The experience was very polished and professional.",0.0
+18,It plays like it is supposed to.There is nothing I can learn from this patcher as I can not see how it works.,0.0
+19,They used a subpatcher which makes the entire process seem more streamlined to a user who may not have as much experience in Max/MSP,0.0
+20,I'd like it better if things were more organized. I have to look in many different parts of the display box to see what is what.,1.0
+21,It looks very clean and organized in a presentable state. Well done with choosing some basic colors and arranging everything for a nice polished finished program.,4.0
+22,"Looks good, everything all lined up. I like it.",0.0
+23,"I only got one of the sounds to trigger - the ""no."" The Ace Ventura sounds were cool and all, but only if it actually works.",0.0
+24,"Firstly, the sounds are fantastic. The creator expertly utilizes the concept of ""cuteness"". Even though the patch is very simple, the fact that it makes ""human"" sounds gives it an air of humanity.",0.0
+25,The patch didn't feature a comment telling me which key was the right key. I was forced to push buttons in an attempt to find the right one and the no sound became annoying. I didn't really enjoy the search because of the no sound.,0.0
+26,Technically the patch worked well but it is just the standard patch that was shown in class. Nothing unique about it besides the sounds.,0.0
+27,"For your report, you only partially completed the report. For the Introduction, your information is recited directly from Computing Project 1 Notes. The Introduction needs to have both a problem statement and a description of the study. I do like your theory because you actually showed the derivation of Newton's Method, but you should also explain the theory in words as well because there is more to say. You have some evidence in your Study and Results, but try to explain all the things your code accomplished a bit more. I think including the images showing your results is very useful. Also, you should consider removing the lines of code after your unique nonlinear function, it is very distracting. Once you have completed your report, you need to update your conclusion. I would also like to point out that you should have three codes for this computing project in your appendix; the first is the polynomials given in the CP 1 Notes, second is the code for the two circles, and the third should be your own code with unique nonlinear equations. Don't be afraid to explore the computing project!",3.0
+28,"While I was using this patch, I was very confused by the good key and bad key sounds. The sound for the bad key element did not sound as negative as I would want it to be. The good key element, with the sound being a bell ringing, was a good choice for determining what the good key was but, the choice for the bad keys was questionable with it being just a simple drum hit.",1.0
+29,"It looks simple. It fulfills the assignment. could maybe be a little more compact, but doesnt really need it to be.",0.0
+30,"I think you did a good jobs, and also picked a really funny music. The most impressive thing in your project is a decibel meter to measure the sound, however I think that you might be able to do something more creative.",1.0
+31,"The visual appearance is definitely uniform and appealing conceptually by the simplicity of the design. It definitely allow for a user interface that is not intimidating. I really like the sounds in this patch, they are entertaining. The bad key, had the wah, wah, wah zany sound effect, which is definitely a fitting sound for this key. They good key was great, it reminded me of being in an amusement park riding on a roller coaster.",0.0
+32,"Generally, it was fine. I did have to fix it though. There were spaces in the name of the audio files, and that is a no no, so I removed the spaces, and then it worked. The sounds were cool and kind of reminded me of guitar hero.",0.0
+33,Nothing new from what we did in class and they layout could have been a little tidier. May have been cool to add some graphics? A good reminder that we need to push our creativity if we want to come up with something truly original!,4.0
+34,"I think you did a very good job technically working on this. Although the code was confusing to me, after I played around with the sounds for a while it was easier to see how it works. You also did a good job explaining the changes that you made, making it easier to understand. After looking at your code and the changes made on it from what we did in class, I learned a few new ways to connect the keys and make it so there is multiple ""good keys"" and ""bad Keys"".",0.0
+35,"There was some key hunting, and the 'no' sound, which was from Sonic, was a little grating to the ears after a while because of how loud it was being played. The 'yes' sound highly amused me, the victory sound from any given Final Fantasy game. It did feel like a victory after finally finding the 'good' key. It was a nice experience overall.",1.0
+36,Your code looks like it is running correctly and is getting to the solution. You need to go into more detail of how the code works. Such as the user having to input a starting point in order for Newton's Method to get to the nearest solution. Your tables seem big when reading the report. Maybe shrink the tables or change the title of each table to be centered over it.,2.0
+37,"The patch felt very fun to use. It was almost like a game to try and find the right key. I liked how the design was simple and there were only two buttons. The sounds were also very funny and goofy. The ""no"" sound was almost like a cartoon and the ""yes"" sounds was a funny song from Shrek so the patch was very entertaining to use over and over again.",0.0
+38,Technically simple. I would have liked an overlap of sound that two speakers would have given the patch. It would have made it more fun to use.,1.0
+39,Looks very simple and similar to the patch shown in class. does not have any notes.,0.0
+40,"It feel very basic when using the patch. There is no audio feedback, as in meters, when pressing a button; there is no feedback whatsoever when pressing the different buttons on the keyboard. The sounds, though, are pretty goofy so entertainment value is a high point.",0.0
+41,"The patch was pretty entertaining to work with and would be something fun to use for a kid. Although, when I was working with It I was confused with what keys I was pressing to make the different sounds. The sounds weren't necessarily ""good"" or ""bad"" therefore I think the keys I was pressing should have been more straight forward but they felt random.",0.0
+42,"It's a very simple lay out. Very bare bones, and minimalistic. No real explanations to what everything does, outside of the 'good' and 'bad' buttons, but the path to each part if pretty easy to figure out.",1.0
+43,Didnt like the yelling the other sound was ok. so i didn't try it much,0.0
+44,The samples were funny.,0.0
+45,"I like the concise look and minimal use of space. The author still gives the message, but without a lot of looking around. It feels like the author copied the template, made it more concise, and added their own versions of yes and no.",0.0
+46,"It was approached in a different way than what the lecture taught, which is always welcome. What the creator could do is to explain the features of the patch so new users don't get lost on it.",4.0
+47,"1. a. Theory appears to be correct. He makes good use of the equations and Newton's method to explain the basis of the project.
+ 
+ 
+ 
+ b. Program is correct! It runs.
+ 
+ 
+ 
+ c. Code is verified. 
+ 
+ 
+ 
+ d. Computations have been completed.
+ 
+ 
+ 
+ 2. a. Yes, the author describes in depth the study.
+ 
+ 
+ 
+ b. Relatively in depth. Could use more insight on Newtonian's Method and how it relates to the code.
+ 
+ 
+ 
+ c. Nothing extravagant noticed in New Observations.
+ 
+ 
+ 
+ d. Scientific competence is there. No baseless theories or conclusions.
+ 
+ 
+ 
+ 3. a. The report gives the bare skeleton and necessary explanations. Could use some color in the descriptions of things and better sentence fluency.
+ 
+ 
+ 
+ b. Yes, just maybe it would be necessary for a second set of equations for the first objective of the code.
+ 
+ 
+ 
+ c. Yes, the conclusion draws directly from the facts. 
+ 
+ 
+ 
+ d. Report looks professional in its layout.",0.0
+48,The sounds are entertaining. It's a bit confusing that the sound is used for both good key and bad key. At first it made me think I had pressed both keys or there was an error in the way it was coded. I then realized the same sound is used within the good key sound as the bad key sound. It's very easy to use and navigate.,2.0
+49,"I liked the samples used. Trying to remember where the sample for the ""good key"" is from. Sounds familiar.",0.0
+50,"The assignment was left as it was demonstrated in class...with even less than that. It does the job of relaying good and bad keys perfectly well, and the sounds are fun, but it is extremely basic otherwise. I think the coder just needs to fill up the patch page more, to show that there is more input feedback being done, and that will hold over the user.",0.0
+51,It feels very simple to use. It's stated exactly what you have to spell out in order to hear both sounds and activate the good/bad key. I enjoy the sounds.,0.0
+52,"So far this patch is the smallest I've seen. Everything is very condensed which almost makes it look clustered but also gives the patch a sense of unity. It's very clear everything works together and makes the patch seem like a whole thing rather than a bunch of parts working together. This aesthetic is very interesting, I haven't seen it before.",0.0
+53,Simple to look at. Nothing different or unusual about the patch. Basically what we learned in class. There were no comments on the patch to let me know what the good key was.,0.0
+54,This patch was very similar to mine except a few small differences. The open file location had the exact file location of the sounds which seems more efficient.,0.0
+55,The sounds are simple and not very entertaining in my opinion. The good key is kind of exciting but runs a bit longer than I'd like it to. The experience I get is just wanting to press many different keys over and over,1.0
+56,"The patch is basically what we learned in class, the only thing new that I saw was when it was locked everything was hidden. I would really like to learn how you did that. I also think the over all look of the patch was much more clean then the others I saw. The only thing I would work on would be to come up with more ideas to make the game more dynamic.",1.0
+57,They approached the coding assignment differently than in class. The technical elements were the same as they were looking for one key but the design was executed a little differently. I learned that it is possible to make the design clean and simple as done in this patch and hope to implement this type of design in my patch as well.,0.0
+58,Not much to look at.,0.0
+59,The look of this patch is like a game that I want to play. It is very clean and organized and has more of a sense of design to it then the other patches that I have seen so far.,0.0
+60,"The patch works great, and responds to the keys accurately.",0.0
+61,Very goofy. Dug it.,0.0
+62,The patch looks simple and streamlined.,0.0
+63,"They seemed to have decided to just stack the codes on top of each other which worked. I think comments would have made for a better experience, so I could test the patch quickly without having to google the right code. I would have added the comment boxes for faster testing.",4.0
+64,"The sounds are funny and goofy. They have almost a cartoon feel especially with the ""no"" sound. The good sounds is very funny because it is so lengthy. One cannot resist but to listen to the whole entire song and then listen to it again because of it's entertaining nature.",0.0
+65,"I'm still a little unclear about how this patch works. Instead of just one ""Good Key"" there are two different ""Good Keys"" which play two different sound files of trains. The ""Bad Keys"" play the sound of 2 more different trains that alternate back and forth every time you hit a bad key. I find this to be rather confusing because all four of the train sounds are very similar to each other and it's hard to comprehend which keys are ""good"" and which keys are ""bad."" In total there are 5 different sound files present in this patch, which I kind of don't understand. I wasn't able to hear the fifth sound, which apparently was a bell that was also supposed to match with a specific key.",0.0
+66,This is perhaps the most basic incarnation of this particular assignment. The sounds are predictable and obvious in their connotation.,0.0
+67,"The look of the patch is very visually appealing. It is in a hexagonal shape, there was definitely a conscious focus on design, which is reflected in this patch. Very strong visually components definitely make the user more interested and engaged to interact with the patch. The cable lines connecting the patch to the speaker have a conscious focus on design as well, with the overlapping and defined peaks.",0.0
+68,"The patch is clean and well organized, but there are a few pieces that really don't need to be there.",4.0
+69,"I think the coding was approached very well within the constraints of the assignments, meaning there was no other new or different technical components. However, it looks like they really did master the patch that they did complete. The only improvement I could make is to be more aware of the artist element of design within the patch. For example, the cables connecting the components could be connecting in a way to create more of artist representation of the piece.",0.0
+70,"The patch was clean and simple, once again I noticed the extra toggles. There was no media lines used so it felt kind of plain.",0.0
+71,the experience is very simple but it works.,0.0
+72,"I learned how to select multiple keys/values using the select object, which was something I was trying to do when creating my patch, and for some reason I just couldn't get it to work. Despite my confusion, I think this person did a pretty good job on the assignment. They achieved something completely unique to what I have seen so far. My one suggestion would be to find clearer and possibly shorter sounds.",3.0
+73,"This patched looked a little messier than the others. I noticed there were two different ""ezdac"" objects and two open objects without the file names in them.",0.0
+74,"There was a really cool and neat idea in the patch that somehow along the way didn't come through. I don't know if something had a wrong path, or something. I did see two message boxes before the speaker, so I don't know if that was the problem or not. The idea was exiting, but sadly I couldn't hear it.",3.0
+75,"This patcher followed all the right rules and components of this assignment. I still suggest spacing out the buttons/keys to look better and cleaner. In this case, I would also advise on stating which key is the good key for the sake of time for this critique assignment. But it still played the sounds and functioned perfectly.",3.0
+76,"They added some new aspects like sending a message outside of the patcher as to play the sound files. It was surprising but maybe a unnecessary in terms of functionality, but good in learning aspect. The message out was a good thing to see, as well as different.",0.0
+77,This patch looks incomplete.,0.0
+78,Looks like it could be tighter/organized slightly more.,1.0
+79,"It has a logical flow, but there are two ending speakers that it can lead to. This could have been simplified. There is only one comments, and it is not specific enough if the person is unfamiliar with the program.",1.0
+80,I wouldn't use sounds that have such similarities unless you are trying to confuse your audience.,0.0
+81,"My experience with the patch is that it was easy to use. While it was easy to use, the sounds were very boring.",1.0
+82,I really liked this patch. It was super creative and the sounds were perfect. The good key sound is one that continues on its own for quite some time so its as if it is actually speaking to you and I personally thought it was very funny. This particular patch makes me want to try harder and make more creative and funny sounds.,0.0
+83,"The audio was enjoyable to hear; they were basic audio files that lacked creativity, but were better that ""yes"" and ""no"".",0.0
+84,"Technical Accuracy: Introduction is informative, Theory is correct but I would recommend providing newton's method equations. Not sure if the code is verified though you have not provided the iterations.
+ 
+ 
+ 
+ 
+ 
+ Interest and Insight: Study could use a little bit of work seems more like code verification than an actual study.
+ 
+ 
+ 
+ 
+ 
+ Quality of Report: I think this project needs a little work, it looks as if you have only graphed 2 circles and displayed them in a plot. There are no intersection points and no iterations done.",3.0
+85,"I appreciate the fact that Tom tried to do something different with his project and expand upon what was taught in class, but I do think he could have organized it better and chosen sounds that aren't extremely similar to each other. There is just a lot going on in this patch and I think it should have been simplified.",1.0
+86,"Like I said before, it was done very simply. Which is always good. The simpler the better. However, I kinda would have liked to see comments of some sort. If I had no idea what was going on, I would be incredibly lost. Honestly, I didn't really learn anything new from this patch.",4.0
+87,"This one was actually a lot of fun! I loved how the good key's sound started off the same as the bad key's. I can definitely see someone just pressing the keys one after another and completely missing the sound, which is amusing to imagine. The sounds overall reminded me of the inside of a sci-fi movie spaceship.",0.0
+88,The overall look and feel of the patch is clean and visually pleasing. It has a nice layout and has all the necessary components of a smooth working patch.,0.0
+89,"I think it works very well. The sounds are cool and offer a kind of variety, so that was nice. The experience was always unique due to the variations in the sounds which made it that much more entertaining.",0.0
+90,"The patch was fairly simple, but it worked. And he also got rests in the patch. Good song choice. The patch was simple to understand, and very nice and tidy. Only thing I could really suggest is if you wanted to go the extra mile, you couldve added bass notes to it.",0.0
+91,"The whole thing was incredibly straightforward. I'd have preferred something a little more out of the box, particularly when we were given some degree of freedom. It works exactly how it was assigned, and I feel it's a little boring.",1.0
+92,They approached it as we did in class except they added buttons with different colors for visually informing when a good/bad key is struck. I learned that the colors of the buttons can be changed to give a visual representation of when keys are struck.,0.0
+93,"It is very plain. There is nothing but the bare-bones minimum of the essential ""key"" object and the ""ezdac~"" button while everything else is missing. There is an explanatory note making sure the viewer toggles the sound button on. I do not see the links to the specific sound files that should be played depending on the key being pressed.",0.0
+94,The patch is organized and well put together but there are a few elements that weren't exactly necessary even though they were in the example shown in class.,0.0
+95,"Nicely laid out, and the two buttons, one for 'yes' and the other for 'no', are color coordinated for the user's convenience. Everything is labelled, and even which key is the 'good one' is spelled out as to leave out the guess work.",0.0
+96,"It is very simple and very clean. The connectors are compressed and smooth. I like how clean this project is. However, the opening window was very large. I like that there is a comment stating what key opens the yes sound file, making it very easy for me to figure it out, but it states it's looking for the ""~"" key (126) when it is actually looking for the ""`"" key (96). It is interesting that there are two speakers though. Also, because it it compressed, it looked like the the sound meter was connected to the right bottom. It could be pulled down more, so it does not have that overlap.",3.0
+97,"I honestly could not get it to play anything. I can open each .wav file in the folder to find out what I'm supposed to hear, but I can't replicate that in the patch. There also wasn't a level meter, so I had no idea if sounds were actually playing or not, or if there was a problem on my end with my speakers. I really wanted to know if I could play 'Sweet Home Alabama'.",0.0
+98,Couldn't get the code to work. I'm not sure if this is a problem on my end.,0.0
+99,"abrupt. Others took time to make the code elegant, long, or truncated, but you could see the connections. Inputs & outputs. None are seen here.",0.0
+100,"There are two ending speakers/end points. This could have been simplified to making it only one speaker. 
+ 
+ 
+ 
+ They could have left in the comments what key number 100 is.",3.0
+101,"Kind of confusing. It seems as though Tom tried to create two different Good Key Bad Key patches and put them together to form one. It seems that he experimented and tried to create a more advanced, more complex version of what we made in class.",0.0
+102,"They did the basic requirement but made it even simpler in appearance, which I dug.",0.0
+103,Easy to use and had some cool sounds. Made me want more sounds to play with and a audio sampler to start constructing some beats!,0.0
+104,Really nice. Great use of a sub patcher so that the presentation of the patch is nice and simple.,0.0
+105,"The coding assignment was very similar to the screencast. The one exception being that they placed buttons before the 'open' messages. For someone who was unfamiliar with Max or any kind of code, I felt it enhanced the patch from a visual aesthetic and also let the user clearly see what the patch was doing. I think that this was where I was forced to wrap my mind around something. Some could argue that the buttons are unnecessary and it might have a pure simplicity without them.",1.0
+106,at first glance the patch looked complicated. however the patch notes were helpful.,0.0
+107,I think they completed the assignment as asked without adding a lot. The buttons are a nice addition to see which side your typing is going through. It adds a good visual cue in addition to the audio output.,0.0
+108,"The patch is set up in two different max windows and might cause for some confusion, but it not too difficult to follow. The structure is still neat and flows well with good notation to tell the sound files apart.",0.0
+109,"Nothing about the patch is surprising from a technical perspective, but it works well.",0.0
+110,It looks like it is all over the place but once you take a closer look at it its not that bad. There are 3 different pianos and i believe each one has its own little section to perform. I've never heard the song before so i have no idea if it is accurate or not. It was still well done.,0.0
+111,I could not get your keys to open and play. When I unlocked it to check if they were linked to a file by double clicking on it nothing happened.,0.0
+112,The patch looks different than the one done in class. It looks almost like a game. I liked the feel of it because it looks very simple without any complicated components or anything.,0.0
+113,The look of the patch is very organized and easy to understand. Excellent font choice.,0.0
+114,I felt like I was in Vegas for a minute.,0.0
+115,different first sound. I want to enjoy the patch that sound made me mute it pretty quick,0.0
+116,"I like using this patch, it is fun and entertaining. It made me want to keep searching for the right key until i found it. I also really enjoyed the sounds that you used it really helped with the whole game experience and making it more fun.",0.0
+117,"This patch is similar to that of the patch we went over in class with it having two branches, one for good key, one for bad key. Both sides have one sfplay~ message, a meter, and a ezdac~. The buttons are a lot bigger and in the center on top, there is a comment that welcomes the user to the patch. In the center of the branches, there is another comment that informs the user what to do.",0.0
+118,"No, while the assignment was very organized and clean, they didn't really do anything exciting. I didn't learn anything from it. They couldve added extra sounds, and better songs, to make it an overall better experience.",3.0
+119,only thing i would change would be to get it to work by pressing keyboard buttons,2.0
+120,"I still found it interesting how the user strayed from the basic layout that was shown in class. I enjoyed how they completely eliminated the buttons from the patch, that definitely helped to clean up the patch and make it look more refined.",0.0
+121,"This patch is very simple and easy to understand, but it isn't very user friendly. Adding a few comments to tell the user to load the sample and turn on the sound, for example, would make the patch easier for the user.",3.0
+122,Need code verification.,1.0
+123,"The sound was sort of boring at first...but then I found the ""yes"" button and it made me laugh for quite a while, good use of the file.",0.0
+124,This patch looked a little to clumped together. I think it would look more clear and professional if there was more space in between each of the keys. I also don't see the a button that explains the letter that represents the good key so I'm unsure which key to hit.,4.0
+125,"It was fairly straight forward so I did not learn anything new in the coding. I think to do this better the author could have added the select message to operate the program to make sound. I think the clarity was well accomplished, and in the future they can focus on being more technically intense.",3.0
+126,"The patch was approached as expected. However, the way that they used musical elements was particularly interesting.",0.0
+127,"Nothing too surprising here, they did add an additional speaker which was a bonus. Could have added some additional colors or notes to engage the user more. Another example of a good foundation but also a reminder to keep trying to find new ways to express patches in interesting ways.",3.0
+128,Everything is so big!! and idk what the yellow lines on the bottom lead to/ if anything,0.0
+129,"The patch was set up differently than the others, but it was done in such a way that things were more complicated than they needed to be. On the day this assignment was presented to us, we were shown how to condense the patch so only one set of most of the objects were required, which this patch did not display. Because of this and the lack of labeling, I don't think this patch would be very reusable.",1.0
+130,One of the sounds was funny it made me chuckle but the no sound was a simple no which i would of preferred it to make another sound other than the obvious no or incorrect try again.,1.0
+131,"Simple and straight to the point, this patch was fun and easy to use. The primary sound was simple but slightly annoying (perhaps like a good 'no' sound should be. The surprise of the 'yay' when I found the yes key was extremely pleasing and the the fireworks certainly added a cool surprise.",3.0
+132,It looks nice and simple. Very small and compact.,0.0
+133,Doesn't look like its going to work.,0.0
+134,It is easy to use though I had to do some guessing to find the good key. I enjoyed the futuristic sounding files and it reminded me of space mountain. It would be well used with some kind of space ship cockpit.,0.0
+135,"I would say the biggest thing was that you had to open the files yourself as in it was indicated in the patcher which files to open. Also, it was split into two columns so instead of using just one audio player, there were two. However, the other parts were functional and once you opened the files, it worked just like it was supposed to!",0.0
+136,again. very simple.,0.0
+137,there are several ways to code. this student opted to keep things seperate instead of coding together.,0.0
+138,The patch was neat and organized. But a few of the pieces like the buttons didn't need to be there.,1.0
+139,"Coding system similar to that of class example, only difference was the sounds, maybe a few different sounds added in to the mix would have helped.",1.0
+140,"The experience was OK. The sounds were fairly interesting although it was a little confusing. For some reason I though the wrong key was the right key, but that just may be how I took the sound effect.",0.0
+141,"The patch feels identical to the example, as for usage. The sounds for the ""bad"" keys sound like a hi-hat or other cymbal on a drum kit, and the ""good"" key plays a full groove for almost 10 seconds. Overall, it's simple, and does what we wanted it to.",0.0
+142,"I would have liked more notes and the whole thing just seemed a little crammed together. There's space! Use it! There's also a number box with a -127, and I'm not sure why.",3.0
+143,the patch uses the same formula shown in class but adds more sound and key options.,0.0
+144,Pretty simple set up but easy to read and looks tidy. Minimalist and functional.,0.0
+145,"Generally, my first visual impression was that it didn't look as efficient as it could be. Not that I thought it might be dysfunctional but I would say just a little clunky.",0.0
+146,Very simplistic of a design! I love it! The clutter from the other designs are essentially non-existent with this design.,0.0
+147,"nothing out of the ordinary, just the basic patch from the video.",0.0
+148,it was pretty simple only thing i would have done differently would be shortening the victory sound file,3.0
+149,"When I first opened the patch, its overall appearance was nice and clean. The patch was visually appealing with the three keyboards being visible. On a technical note, everything worked smoothly and continued to get better as I plated with the patch more The creator of this patch really took a lot of time and effort to get the song just right. I thought the patch was very advanced and creative. It certainly evoked some dance moves.",0.0
+150,It was kinda funny. The militaristic samples rose a chuckle out of me.,0.0
+151,"The patch itself is pretty good, the sounds are funny and entertaining. Its a decent patcher but I actually did have to hunt down the specific good key which took a little time but then again that is the point of this assignment so all in all its a delightful patcher. The space sounds blew me away.",0.0
+152,"I think that the sound that you picked for the wrong key is really funny,and the one that you picked for the right key is really amazing, I was so surprised when I heard it, so I'm really enjoy using it.",0.0
+153,"The introduction of the header and master audio switch is a novel idea that is aesthetically pleasing and improves immensely the ease with which the viewer can control the program and use it correctly. The presence of the links between the different objects, necessary as they may be, slightly detract from the quality of the header and switch button. The actual working part of the program seems slightly clunky due to the zigzagging wires crossing through one another and the yes/no button signals. The organization of the patch elements and including more novel sounds will make the patch perfect.",1.0
+154,It looks fairly organized and well constructed. It feels very straightforward and efficient.,0.0
+155,"I think you did a good jobs, and also picked a really awesome music. The most impressive thing in your project is a decibel meter to measure the sound.",0.0
+156,goofy. the sounds used are goofy.,0.0
+157,"The patch is very simple, but the creator could have added a few things to make it easier to the user. Firstly, comments that tell the user to turn on the sound, for example, would make is user friendly. Secondly, adding a few features like the ability to pick the ""success"" key would be a great feature for this patch.",4.0
+158,I think the way they organized the patch was surprising; a lot of people had their patch spread out far apart and made sure the user could separate the different parts easily. This patch sort of bunches everything together giving it a new feel. I don't think there's anything they need to do to improve their assignment.,0.0
+159,"Coding was very similar to class example, easy to follow, and it had quite an entertaining outcome.",0.0
+160,"I think the patch looks really cool. I learned a few new things like the counter. As I went through it, I thought of ways to make it simpler, but Overall, I think it looks really good. Great Job!",0.0
+161,"It was easy to figure out what key to type to find the (96) value. I was somewhat upset that it states it's looking for the ""~"" key (126) when it is actually looking for the ""`"" key (96). This is the only project that actually states what key it's looking for, so it makes it more user friendly compared to the other projects. Thank you. The sounds are simple.",0.0
+162,"They also seemed to follow the pattern laid out in class, without adding anything additional. This completed the assignment but did not go overboard in any way.",0.0
+163,The patch was original in design and easy to use. It is always nice to see alterations in project designs. :),0.0
+164,"It is the most difficult experience I ran in to because I could not find key 110 and the author did not tell me which one it was. Granted, if the purpose of the code was to find the key, then the author completed this marvelously. I was also still able to listen to the sounds, and this helped further the appeal.",0.0
+165,"The design was enjoyable to the eye, yet it seemed that it could have been simplified if taken the time to do so. I didn't learn anything from the construction besides that fact that there are multiple ways to design the same project (complexity vs simplicity).",0.0
+166,"While using this patch, I thought that the sounds were really entertaining to listen to. The difference between good key and bad key was very easy to determine and I thought that the sounds were really goofy and made me laugh. The big buttons helped out a lot in giving visual feedback to me and even the subtle changes of buttons changing color helped out a lot. My experience was a fun one, actually.",0.0
+167,"Seriously kind of aggrivated. I understand why the coding was so squished now, because the key to activate it was control and the v key. And no, I did not figure it out on my own, I looked it up because I was so annoyed I kept hearing high ho silver awaaaay. When I finally heard the correct sound I was a bit confused, but I guess it makes sense it was talking about teeth and having silver plates on them or else it could cause gingivitis? I don't know, didn't understand that joke..",3.0
+168,"The failure sound is really annoying, I suppose that it makes the user more motivated to find the success sound, but the game requires hearing the fail sound over and over. It would be better if it was a softer, shorter, less annoying sound, or had volume controls so I don't have to endure it.",3.0
+169,"Simple coding like in class, nothing different other than the sound files and the correct key. The comments on the side somewhat gave away the correct key though. I mean, I know it was there for the coder's purpose but for someone who did not know and was trying to figure it out, I would have renamed the sound files to something more incognito as well as the comment.",3.0
+170,next time make it normal size i should have to scroll or shrink the page to fit it on my screen,0.0
+171,"Conceptually this piece is very strong and it is designed in a way to really engage the user to feel comfortable interacting with the patch. I did enjoy the sounds, it sounds like these were keys to a guitar and feels very authentic because it is not recognizable. I think the user experience is straight forward and through the tune of the guitar a indication of emotion is felt through the good/bad key.",0.0
+172,They approached it exactly as we did in the classroom. I didn't really learn anything from what they did because it's very similar to mine. I would at least organize the different objects.,1.0
+173,"Simple structure but effective, the added graphics were great but unexpected because they had not come up in class as an option within the creative process of this software. Seems like I am learning a lot about what the possibilities for more user friendly interface design. My only critic was that the buttons at the bottom could have been lined up more symmetrically.",1.0
+174,"I didn't recognize the song until after reading the description. I like how it works the design looks kind of simple but it really isn't because of all the cords and things, which is a good thing.
+ 
+ it's kind of slow doesn't really make me feel anything but like you said, it works and thats what matters right now",0.0
+175,"Right off the bat, I noticed that there would be more than two sounds that could possibly be played, and probably some at the same time. No descriptions to how the sounds can be made by each part, but from looking at it one can guess what's going on with it.",0.0
+176,"it feels good but the added step of having to turn on the audio manually kind of seems unnecessary than using the computers audio on off. The sounds are good and easy to tell which is good and which is bad. The ""bad"" key sound does keep playing even when the ""good"" key is pressed, not sure if it is suppose to be like that. I thought I was in the movie Jaws and having a sip of Kool-aid.",3.0
+177,They approached the coding assignment very typically. The patch looks similar to the tutorial done in class. They added the meter for extra flare. I did learn that I should have used more comments in my own patch since it can be very confusing without them.,0.0
+178,Before I ran the patch the overall look and feel was very confusing to me at first. I was unsure how it worked together. I have limited experience with Max and this may be my reason for my confusion but I do think it could be a little more cleaned up.,1.0
+179,"The patch is very simple to use, but overall not very user friendly. For example, in order for the patch to work the user must load the clips and then turn on the sound. Adding some comments would help the user know what to do. PS! Thanks for not using the most annoying failure sound!! A lot of other patches use really annoying failure sounds and, since you end up hearing it over and over it gets really annoying. So thanks for using something that's not horrible!",2.0
+180,conceptually it was compartmentalized.,0.0
+181,"I like the simple layout and the description used to navigate the user into understanding the patch and what it does. They approached it the same way we approached it in class whereas one key is good, and the other key is bad. They could have made more good keys.",3.0
+182,"Technically the patching looks fine. It looks like the assignment was followed exactly, the only thing I did not see was the meter. I did not see anything out of the norm in terms of a new feature or function that was not assigned. I really do like the visual aesthetics were very appealing. I did not learn anything new from the way the programming was completed. I think would could have possible been improved was just the recording sound of the wave files, they were just really low.",4.0
+183,"This user's patch was laid out differently from the previous patches I looked at. He did not use any buttons and instead of one audio input, had two. The patch was very refined and condensed.",0.0
+184,"The patch was well thought out and the audio was entertaining to listen to. The audio files were noises that represented ""Yes"" and ""no"", so they gave a sense of similarity to that of what the instructor presented to the class yet still maintained its originality.",0.0
+185,"Basic concept, kind of monotonous and it took me while to find the 'yes' key! The redeeming factor was the 'yes' sound was crazy and strange and interesting which made it worth the wait.",1.0
+186,"Technically, it wasn't anything complicated, and nothing experimental about it. Because of how simple it was, I didn't learn anything new and nothing jumped out at me. Which is fine since the path to each part was laid out to where it should be. Maybe adding a level meter in just to give the user an idea of how loud everything is, and possibly making sure before using a sound that it's not too loud for the user. Other than that, it was a pretty good patch.",3.0
+187,The look of the patch is virtually the exact same as our example from class last week.,0.0
+188,"The look of the patch is quite complex, but when you look to where each path goes it starts to make more sense. The visual of three keyboards gives you a nice visual to what is being played, and the labels to each path and keyboard helps a lot. The technical aspect of it is very easy since all you have to do is click on the toggle and the song starts. The small made me smile a bit since it was ""Don't Go Breakin' My Heart"" and it's pretty close to the actual thing. I think what can be done better is having it more clean since tracing each path was a little tough to figure out at times to see what was hooked up to what. Other than that, the concept of the patch was pretty neat and quite clever.",2.0
+189,The overall layout looks pleasant to the eye and not too complex.,0.0
+190,Simple and not as developed as it could have been. On a positive note it was not intimidating.,1.0
+191,This patch was very entertaining. it almost had a soundboard feel and I just wanted to make custom mixes of train sounds.,0.0
+192,The overall feeling I got when looking at the patcher was that it was cleanly laid out. My personal preference would be to line up the edges of the bottom boxes with the edges the message patches above. A minor point!!!,1.0
+193,"The aesthetic look of the patch is appealing and it has all the components with some of the other patches have been missing. The design of the patch is predominantly on a vertical plane, but here is uniformity and it looks balanced with how the components were placed. It looks user friendly and well defined.",0.0
+194,"I enjoy the use of different color buttons for notifying when the Good/Bad key is struck. Very simple, easy to navigate.",0.0
+195,"Looks similar to class example but minus the ""numbers"" box to see exactly what number this was, this made it a bit tougher.",0.0
+196,"The user took the time to condense the design to the simplest form I have critiqued so far; very enjoyable to see such an original and simple design. I learned that I could have condensed my own project even further to achieve the same results. The only thing I would like the creator of this patch to do better is to bring more enjoyable audio to future projects. Overall, great job! :)",3.0
+197,"I was not able to get the patch to run. However, the description that was provided makes the patch seem like a very neat idea. I liked that the idea was musical and hope to see something like this that works.",0.0
+198,"The coding assignment was formatted and completed the same way as it was done in class, but there was an additional sound meter added.
+ 
+ 
+ 
+ They could have left comments such as what key number 97 is.",2.0
+199,I got it to work as the assignment describes.,0.0
+200,The patch looks very simple. Easy to understand what is intended.,0.0
+201,The ending section could have been simplified with one speaker output rather than two.,2.0
+202,"Small boxes in general, somewhat squishy and close but it does not take away from the performance of the patch. Same like the one in class.",0.0
+203,The patch was cleanly executed technically. They approached the coding assignment similar to the one done in class. The patch was easy to understand and professionally done. I could have added comments to my patch to make the experience less confusing.,1.0
+204,"I thought the user experience was overall very strong with this patch, not only from visual aesthetics, but from the functionality as well. The sounds were entertaining, especially the good key. The sounds were definitely goofy, which make the user interface more fun.",0.0
+205,"It feels somewhat inefficient as in I have to work to make the patch run the way it's supposed to and once I got that going, it was a pretty straightforward yes and no, although the yes was a refreshing 'ding' sound. Overall it was a satisfactory experience with some kinks.",0.0
+206,"There is nothing technically wrong with the patch, however, the patch only needs one sound control, you don't need a second exdac object.",3.0
+207,They tried the basic requirement but I couldn't get any sound.,0.0
+208,"They approached the assignment similar to the one done in class. They had similar components however, the sounds were different and not recorded but probably taken from somewhere else which was interesting. Also, they added comments to the patch which is something I should have done to make the experience less confusing for users.",0.0
+209,"Technically, it was a simple setup, and nothing too out of the box. Everything worked as it should, and when it should. Nothing exciting, and nothing boring or unusual. As for what could be done better, I got nothing since everything worked and everything was laid out as it should.",0.0
+210,"This patch is very simple, and it's easy to understand the signal flow.",0.0
+211,"The sounds are awesome and unique, this is a very well done patch.",0.0
+212,"Aside from the fixing I had to do that I mentioned before, it was good. It meant the basic requirements. The comment wasn't in a comment box, so that may be something to look into. Other than that, keep up the good work.",0.0
+213,the song is a little longer than necessary but i like how random it is,0.0
+214,The only problem I am noticing is that the creator of the patch didn't use the open message to open the sound from the beginning. That requires the user to set up the patch before they can use it. This seems like a large flaw.,1.0
+215,"Visually this patch is extremely sharp looking. The cable line that he used to connect the components look like a piece of art work in itself, with a very mechanical feel. The patch looks very straightforward and user friendly, and followed the guidelines of the assignment exactly.",0.0
+216,Clean looking patch,0.0
+217,"After reading over your report, overall I feel that it is well organized and is reader friendly. 
+ 
+ In the introduction section of the report, you give good insight to what Newton's Method is and how it is applied. This is great because you will be able to tie in what you talked about in this section into the conclusion. 
+ 
+ In the theory section, it seems unfinished. You are right that you have to show the derivations of the your equations but you need to elaborate on what all that is. To the reader, I do not know what all that means. You need to state how it relates to Newton's Method.
+ 
+ In the study and results section, this is were you explain how you came across your graphs and what each graph means. In addition, you should show a caption under each graph such as ""Figure 1""...which will make your report more organized. Also, I am not really sure what the ""Warnings"" are on page 3-4. I have not seen this in the other 4 reports I am critiquing. 
+ 
+ In the conclusion section, I feel you can tie in what you stated in the intro and theory. Also, you can incorporate how it is applied to this class and scientifically applied to engineering.
+ 
+ in the appendix, I ran your code and it worked. 
+ 
+ Overall this report looks good, just modify the report as I have stated above.",4.0
+218,"pretty good. This computing project includes all three conditions of two circles, but for the fourth part, it seems like something wrong in the figures.",0.0
+219,"This patch is another short and simple patch but i feel like it needs more room to be able to see more clearly, since it is a short assignment it does not hurt to spread them out a bit more.",2.0
+220,I found the coding to be basically the same as shown in class. The two extra switches I thought maybe could have been removed. The sound was original as well.,3.0
+221,"This patch was techinically very visually creative and functionally as well. I did learn to try to stretch myself creatively in terms of trying to program my patch to have an artistic quality as well, and not just merely connect components for functionality purposes, included stretching creativity in sounds waves as well. I do not really have any recommendations for improvements, I think they did a great job.",0.0
+222,"It feels similar to the patch I made. Its a clear response when the keys are pushed, with cool sounds.",0.0
+223,"Very simple, I like it.",0.0
+224,"The bad sound was very entertaining. The good sound was very nice at giving positive feedback. However, I feel that the bad sound was a bit too long to get the intended experience.",0.0
+225,"This patch was techinically very visually creative and functionally as well. I did learn to try to stretch myself creatively in terms of trying to program my patch to have an artistic quality as well, and not just merely connect components for functionality purposes, included stretching creativity in sounds waves as well. I do not really have any recommendations for improvements, I think they did a great job. I understand the allure of creating symmetry with the patch, which is probably why the meter was left out. However, I think they still could have incorporated this in an artistic way to compliment the rest of the piece. I feel this piece was visually and functionally very strong, therefore, I would challenge the creator to link music for the good/bad key that invokes more of an intense emotion. Overall, awesome job!",0.0
+226,"I wouldn't say this was a simple sequencer. But I would say it was extremely effective in isolating how to achieve different beat qualities; i.e. 1/8, 1/4, & 1/2 notes. This was something I started to mess with, but did not have time to do it for the whole song. so I omitted it and make mine simple full notes. I like that he took time to isolate how to create different beat qualities, something I had trouble with.",3.0
+227,"-Your introduction is well-written.
+ 
+ -I would consider changing your ""code verification"" section. You didn't necessarily verify your code, you just ran it. You should verify it by hand or by using Wolfram Alpha.
+ 
+ -Your ""Study and Results"" section was very thorough. I would talk about the tables of values a little more. 
+ 
+ -You wrote this in your Study section, ""When altering the MATLAB code to use my own two non-linear equations, the intersection points change."" Where is your proof of this? I would put a figure of what MATLAB produced and actually define your own two non-linear equations.
+ 
+ 
+ 
+ Great job!",3.0
+228,"The patch looks very good, and is condensed a lot. But still looks like it took some technical abilities to make.",0.0
+229,"The patch followed the guidelines perfectly. This patch did not contain each step by step explanation for each button which I have been used to seeing. However, it works perfectly, it is still easy to navigate and I don't think anything could have been done differently.",0.0
+230,"This is another bare bones basically and neatly structured patch. If they wanted to do more they could have used background colors, made the key a bit more difficult to find with key combinations, and other slightly more complicated additions to the game.",3.0
+231,"Aside from the sounds and extra meter, I'd say this patch was pretty run of the mill. I didn't really see a use for the extra meter, but it did add a little extra visual component to the project. One thing I think could be improved is that there was a little extra length of ""noise"" at the end of the yes soundbite and that probably could have been trimmed off.",3.0
+232,"- I'm not sure if the results with the constant error message could be presented in a better looking way.
+ 
+ - Theory would be better if there were words describing what the equations mean and how they lead to each other.
+ 
+ - Images need figure/table captions
+ 
+ - Make sure everything is spaced-well so things aren't cut off, like how the Study and Results title is by itself.
+ 
+ - Needs more discussion of non-error results in study and results section.",4.0
+233,"The patch looks somewhat like a copy of the patcher example, but with some stuff removed and moved around. It is clean, but does not seem to have a particular orginization attached to it.",0.0
+234,"Visually logical and simple, including colored buttons indicating ""correct"" and ""incorrect"" input.",0.0
+235,Couldn't get it to work.,0.0
